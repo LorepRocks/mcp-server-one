@@ -1,0 +1,40 @@
+{
+  "name": "weather-mcp-server",
+  "version": "1.0.0",
+  "description": "A Model Context Protocol server that provides weather information using the TypeScript SDK",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx index.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "weather",
+    "typescript",
+    "openweathermap"
+  ],
+  "author": "MCP Weather Server",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LorepRocks/mcp-server-one.git"
+  },
+  "bin": {
+    "weather-mcp-server": "./dist/index.js"
+  }
+}
